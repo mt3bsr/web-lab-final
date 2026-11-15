@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="navbar">
+    <ul>
+      <li><a href="index.php#home">Home</a></li>
+      <li><a href="index.php#about">About Me</a></li>
+      <li><a href="index.php#skills">Skills</a></li>
+      <li><a href="index.php#projects">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button id="themeBtn" onclick="toggleTheme()">Dark Mode</button>
+  </div>
+  <div id="contact" class="section">
+    <h2>Contact Me</h2>
+    <form name="contactForm" action="contact_process.php" method="post" onsubmit="return validateForm()">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"><br><br>
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email"><br><br>
+      <label for="subject">Subject:</label>
+      <select id="subject" name="subject">
+        <option value="General question">General question</option>
+        <option value="Job opportunity">Job opportunity</option>
+        <option value="Project collaboration">Project collaboration</option>
+      </select><br><br>
+      <label>Reply by:</label>
+      <input type="radio" id="byEmail" name="reply_by" value="Email" checked> Email
+      <input type="radio" id="byPhone" name="reply_by" value="Phone"> Phone<br><br>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5"></textarea><br><br>
+      <input type="submit" value="Send" class="btn">
+      <input type="reset" value="Clear" class="btn">
+    </form>
+  </div>
+  <div id="footer"><p>&copy; Muteb Salameh Alrashdan</p></div>
+  <script src="script.js"></script>
+</body>
+</html>

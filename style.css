@@ -1,0 +1,187 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  color: teal;
+}
+
+a {
+  color: teal;
+}
+
+#navbar {
+  background-color: #002244;
+  text-align: center;
+  padding: 12px;
+}
+
+#navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar li {
+  display: inline-block;
+  margin: 8px 14px;
+}
+
+#navbar a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  color: turquoise;
+}
+
+#themeBtn {
+  padding: 6px 14px;
+  border: 1px solid turquoise;
+  background-color: transparent;
+  color: turquoise;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#home {
+  background-color: #003366;
+  text-align: center;
+  padding: 90px 8%;
+}
+
+#home h1 {
+  color: white;
+  font-size: 40px;
+  margin: 0;
+}
+
+#home h3 {
+  color: turquoise;
+  margin: 10px 0;
+}
+
+#home p {
+  color: #ddd;
+}
+
+.btn {
+  display: inline-block;
+  background-color: turquoise;
+  color: #002244;
+  font-weight: bold;
+  border: none;
+  padding: 10px 24px;
+  margin: 8px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: aquamarine;
+}
+
+.section {
+  padding: 50px 8%;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 30px;
+  margin-top: 0;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 900px;
+}
+
+caption {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #002244;
+  color: white;
+}
+
+.card {
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  margin: 1%;
+  padding: 18px;
+  border: 1px solid #ccc;
+  border-left: 6px solid turquoise;
+  border-radius: 8px;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+input[type="text"], select, textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+#footer {
+  background-color: #002244;
+  color: #ddd;
+  text-align: center;
+  padding: 12px;
+}
+
+@media (max-width: 900px) {
+  .card {
+    width: 46%;
+  }
+}
+
+@media (max-width: 700px) {
+  #navbar li {
+    display: block;
+  }
+
+  #home {
+    padding: 60px 8%;
+  }
+
+  #home h1 {
+    font-size: 30px;
+  }
+
+  .card {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  th, td {
+    padding: 6px;
+    font-size: 14px;
+  }
+}
